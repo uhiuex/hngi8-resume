@@ -115,17 +115,17 @@
             <div class="col-md-12 col-sm-12 text-center">
               <div class="contents">
                 <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
-                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Tom Saulnier</h2>
-                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Front-end Web Developer and Graphic Designer</p>
+                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">{{.FName}}</h2>
+                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Back-end Web Developer and UI/UX Designer</p>
                 <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                   <li>
-                    <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                    <a class="facebook" href="https://facebook.com/adeyemiabiye"><i class="icon-social-facebook"></i></a>
                   </li>
                   <li>
-                    <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                    <a class="twitter" href="https://twitter.com/uhiuex"><i class="icon-social-twitter"></i></a>
                   </li>
                   <li>
-                    <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                    <a class="instagram" href="https://instagram.com/uhiuex"><i class="icon-social-instagram"></i></a>
                   </li>
                   <li>
                     <a class="linkedin" href="#"><i class="icon-social-linkedin"></i></a>
@@ -162,13 +162,13 @@
               <p>Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum eleifend sollicitudin lacinia justo id turpis. Nec convallis integer. Odio eget duis. Nulla aenean et. Blandit varius sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut sollicitudin. Et est a nam dolores eget itaque sagittis et parturient duis est eleifend sociis rutrum odio viverra integer.</p>
               <div class="about-profile">
                 <ul class="admin-profile">
-                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Tom Saulnier</span></li>
+                  <li><span class="pro-title"> Name </span> <span class="pro-detail">{{.FName, .LName}}</span></li>
                   <li><span class="pro-title"> Age </span> <span class="pro-detail">25 Years</span></li>
-                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">4 Years</span></li>
-                  <li><span class="pro-title"> Country </span> <span class="pro-detail">USA</span></li>
-                  <li><span class="pro-title"> Location </span> <span class="pro-detail">San Francisco, CA</span></li>
-                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">email@example.com</span></li>
-                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">+ (00) 123 456 789</span></li>
+                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">0.5 Years</span></li>
+                  <li><span class="pro-title"> Country </span> <span class="pro-detail">Nigeria</span></li>
+                  <li><span class="pro-title"> Location </span> <span class="pro-detail">Lagos</span></li>
+                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">4verprime@gmail.com</span></li>
+                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">+234(805)-6605-438</span></li>
                   <li><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li>
                 </ul>
               </div>
@@ -193,8 +193,8 @@
                 <i class="icon-grid"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Front-end Development</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">Back-end Development</a></h3>
+                <p>New to Back-end Studing Go!</p>
               </div>
             </div>
           </div>
@@ -205,20 +205,8 @@
                 <i class="icon-layers"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Graphic Design</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-md-6 col-lg-3 col-xs-12">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon">
-                <i class="icon-briefcase"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">Business Branding</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">UI/UX Design</a></h3>
+                <p>Beginner using Figma</p>
               </div>
             </div>
           </div>
@@ -229,8 +217,8 @@
                 <i class="icon-bubbles"></i>
               </div>
               <div class="services-content">
-                <h3><a href="#">Consultancy</a></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+                <h3><a href="#">Writer</a></h3>
+                <p>Still thinking about this after my first HNG Task to write an article</p>
               </div>
             </div>
           </div>
@@ -445,47 +433,6 @@
       <!-- Container Ends -->
     </section>
     <!-- Portfolio Section Ends --> 
-
-    <!-- Counter Area Start-->
-    <section class="counter-section section-padding">
-      <div class="container">
-        <div class="row">
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon"><i class="icon-briefcase"></i></div>
-              <div class="counterUp">250</div>
-              <p>Project Working</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon"><i class="icon-check"></i></div>
-              <div class="counterUp">950</div>
-              <p>Project Done</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon"><i class="icon-diamond"></i></div>
-              <div class="counterUp">150</div>
-              <p>Awards Received</p>
-            </div>
-          </div>
-          <!-- Counter Item -->
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon"><i class="icon-heart"></i></div>
-              <div class="counterUp">299</div>
-              <p>Happy Clients</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Counter Area End-->
 
     <!-- Contact Section Start -->
     <section id="contact" class="section-padding">      
