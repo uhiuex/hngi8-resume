@@ -1,3 +1,3 @@
-module UsersAlomeDocumentsGitHubhngi8-resume
+module hngi8-resume
 
 go 1.16
