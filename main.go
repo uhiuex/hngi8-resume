@@ -7,6 +7,10 @@ import (
 
 var tpl *template.Template
 
+func init() {
+	tpl = template.Must(template.ParseGlob("*.html"))
+}
+
 func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/process", processor)
@@ -26,7 +30,7 @@ type Name struct {
 
 func processor(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "POST" {
-		http.Redirect(w, r, "/", http.StatusSeeOther)
+		http.Redirect(w, r, "/process", http.StatusSeeOther)
 		return
 	}
 
