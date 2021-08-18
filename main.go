@@ -18,7 +18,7 @@ func main() {
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "8000" // Default port if not specified
+		port = "80" // Default port if not specified
 	}
 	http.ListenAndServe(":"+port, nil)
 }
