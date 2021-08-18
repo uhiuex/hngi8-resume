@@ -15,7 +15,7 @@ func main() {
 	http.HandleFunc("/", index)
 	http.HandleFunc("/process", processor)
 	http.Handle("/assets/", http.StripPrefix("/assets/", http.FileServer(http.Dir("assets"))))
-	http.ListenAndServe(":80", nil)
+	http.ListenAndServe(":90", nil)
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
