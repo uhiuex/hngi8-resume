@@ -30,8 +30,8 @@ type Name struct {
 
 func processor(w http.ResponseWriter, r *http.Request) {
 	if r.Method != "POST" {
-		http.Redirect(w, r, "/process", http.StatusSeeOther)
-		return
+		t, _ := template.ParseFiles("processor.html")
+		t.Execute(w, nil)
 	}
 
 	fname := r.FormValue("user")
